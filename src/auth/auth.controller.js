@@ -1,7 +1,11 @@
-import { hash, compare } from "bcryptjs"
+import pkg from "bcryptjs"
 import User from "../user/user.model.js"
+import { generateJWT } from "../helpers/generate-jwt.js"
+
+const {hash, compare} = pkg
 
 export const login = async (req, res) => {
+    
     const { email, password, username } = req.body;
 
     try {
