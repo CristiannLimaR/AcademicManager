@@ -3,6 +3,7 @@ import cors from "cors";
 import morgan from "morgan";
 import helmet from "helmet";
 import { dbConection } from "./mongo.js";
+import authRoutes from '../src/auth/auth.routes.js'
 
 export const middlewares = (app) => {
   app.use(express.urlencoded({ extended: false }));
@@ -12,7 +13,9 @@ export const middlewares = (app) => {
   app.use(helmet());
 };
 
-const routes = (app) => {};
+const routes = (app) => {
+  app.use('/academicManager/v1/auth', authRoutes)
+};
 
 const connectDB = async () => {
   try {
