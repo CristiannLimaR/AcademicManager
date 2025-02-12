@@ -5,6 +5,7 @@ import helmet from "helmet";
 import { dbConection } from "./mongo.js";
 import authRoutes from '../src/auth/auth.routes.js'
 import userRoutes from '../src/user/user.routes.js'
+import courseRoutes from '../src/course/course.routes.js'
 
 export const middlewares = (app) => {
   app.use(express.urlencoded({ extended: false }));
@@ -16,7 +17,8 @@ export const middlewares = (app) => {
 
 const routes = (app) => {
   app.use('/academicManager/v1/auth', authRoutes),
-  app.use('/academicManager/v1/user', userRoutes)
+  app.use('/academicManager/v1/user', userRoutes),
+  app.use('/academicManager/v1/course', userRoutes)
 };
 
 const connectDB = async () => {
