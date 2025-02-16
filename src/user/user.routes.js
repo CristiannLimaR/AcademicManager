@@ -19,14 +19,11 @@ router.get(
   getUserById
 );
 
-router.get(
-    "/",
-    getUsers
-)
 
 router.put(
   "/:id",
   [
+    validateJWT,
     check("id", "No es un ID valido").isMongoId(),
     check("id").custom(existsUserById),
     validateFields,

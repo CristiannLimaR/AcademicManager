@@ -5,11 +5,12 @@ export const isRoleValid = async (role = '') => {
     const existRole = await Role.findOne({ role });
 
     if (!existRole) {
-        throw new Error(`Role ${role} does not exist in the database`)
+        throw new Error(`Role ${role} does not exist in the database`);
     }
 
+    return true;
+};
 
-}
 
 export const existsEmail = async (email = '') => {
     const existEmail = await User.findOne({ email })

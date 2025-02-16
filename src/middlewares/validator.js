@@ -1,12 +1,12 @@
 import { body } from 'express-validator'
 import { validateFields } from './validate-fields.js'
-import { existsEmail } from '../helpers/db-validator.js'
+import { existsEmail, isRoleValid } from '../helpers/db-validator.js'
 
 export const registerValidator = [
     body('name', 'The name is required').not().isEmpty(),
     body('surname', 'The surname is required').not().isEmpty(),
     body('email', "You must enter a valid email").isEmail(),
-    body('role').custom(existsEmail),
+    body('role').optional().custom(isRoleValid),
     body('email').custom(existsEmail),
     body('password', 'Password must be at least 8 characters').isLength({ min: 8 }),
     validateFields

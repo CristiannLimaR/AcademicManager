@@ -18,7 +18,7 @@ export const middlewares = (app) => {
 const routes = (app) => {
   app.use('/academicManager/v1/auth', authRoutes),
   app.use('/academicManager/v1/user', userRoutes),
-  app.use('/academicManager/v1/course', userRoutes)
+  app.use('/academicManager/v1/course', courseRoutes)
 };
 
 const connectDB = async () => {

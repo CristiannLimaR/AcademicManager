@@ -36,12 +36,11 @@ const UserSchema = Schema({
   courses: [
     {
       type: Schema.Types.ObjectId,
-      ref: 'course'
+      ref: 'Course'
     }
   ],
   role: {
     type: String,
-    required: true,
     enum: ["STUDENT_ROLE", "TEACHER_ROLE"],
     default: "STUDENT_ROLE"
   },
