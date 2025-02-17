@@ -1,0 +1,66 @@
+[{
+  "_id": {
+    "$oid": "67b2811ca6986bb6b8483238"
+  },
+  "name": "TALLER",
+  "description": "Se pone en practica la teoria",
+  "state": true,
+  "students": [
+    {
+      "$oid": "67b2824da6986bb6b848324f"
+    }
+  ],
+  "teacher": {
+    "$oid": "67b28031a6986bb6b848322d"
+  },
+  "createdAt": {
+    "$date": "2025-02-17T00:21:48.559Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T00:47:48.824Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b28213a6986bb6b8483247"
+  },
+  "name": "Tecnología",
+  "description": "Teoria",
+  "state": true,
+  "students": [
+    {
+      "$oid": "67b2824da6986bb6b848324f"
+    }
+  ],
+  "teacher": {
+    "$oid": "67b28031a6986bb6b848322d"
+  },
+  "createdAt": {
+    "$date": "2025-02-17T00:25:55.271Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T00:27:51.149Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b282f3a6986bb6b8483262"
+  },
+  "name": "Biología",
+  "description": "Ciencia que estudia los seres vivos",
+  "state": true,
+  "students": [
+    {
+      "$oid": "67b2824da6986bb6b848324f"
+    }
+  ],
+  "teacher": {
+    "$oid": "67b28031a6986bb6b848322d"
+  },
+  "createdAt": {
+    "$date": "2025-02-17T00:29:39.473Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T00:32:38.102Z"
+  }
+}]

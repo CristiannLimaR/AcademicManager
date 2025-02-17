@@ -1,0 +1,461 @@
+{
+	"info": {
+		"_postman_id": "4180724c-3784-4c87-b33b-e63bce3a3364",
+		"name": "Courses",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42149033"
+	},
+	"item": [
+		{
+			"name": "AddCourse",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"name": "content-type",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": "<calculated when request is sent>",
+						"name": "content-length",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					},
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyODAzMWE2OTg2YmI2Yjg0ODMyMmQiLCJpYXQiOjE3Mzk3NTE2NzMsImV4cCI6MTczOTc1NTI3M30.W7s0R6_kTo40Eyt2Hf1LvL7GYPyUW-zLtzNT9WFS88A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"TALLER\",\r\n    \"description\": \"Se pone en practica la teoria\",\r\n    \"teacher\": \"ADMIN@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/academicManager/v1/course",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"academicManager",
+						"v1",
+						"course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCourses",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					},
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyODI0ZGE2OTg2YmI2Yjg0ODMyNGYiLCJpYXQiOjE3Mzk3NTIzMDMsImV4cCI6MTczOTc1NTkwM30.my4Zn6433rgHPOI5Buxwdh3WX1Ak20uy5gFidQXrPwI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/academicManager/v1/course",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"academicManager",
+						"v1",
+						"course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "assignToCourse",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": "0",
+						"name": "content-length",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					},
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyODI0ZGE2OTg2YmI2Yjg0ODMyNGYiLCJpYXQiOjE3Mzk3NTIwMzIsImV4cCI6MTczOTc1NTYzMn0.JC2bJsCQoWjRnQKOKHq_6RfxOcv7TBTLZjBEaz4jzc4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/academicManager/v1/course/assignToCourse/67b2811ca6986bb6b8483238",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"academicManager",
+						"v1",
+						"course",
+						"assignToCourse",
+						"67b2811ca6986bb6b8483238"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCourse",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"name": "content-type",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": "<calculated when request is sent>",
+						"name": "content-length",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					},
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyODAzMWE2OTg2YmI2Yjg0ODMyMmQiLCJpYXQiOjE3Mzk3NTE2NzMsImV4cCI6MTczOTc1NTI3M30.W7s0R6_kTo40Eyt2Hf1LvL7GYPyUW-zLtzNT9WFS88A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Biología\",\r\n    \"description\": \"Ciencia que estudia los seres vivos\",\r\n    \"teacher\": \"ADMIN@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/academicManager/v1/course/67b282f3a6986bb6b8483262",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"academicManager",
+						"v1",
+						"course",
+						"67b282f3a6986bb6b8483262"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCourse",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					},
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IxNTI1Y2U4OTFlZWVjMjZmMDUzOGMiLCJpYXQiOjE3Mzk3NTAxMjMsImV4cCI6MTczOTc1MzcyM30.uhcj5mXm4Yk9b_lp1gWtvvpyX_uXw3GdJaQu_Il9N7s",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/academicManager/v1/course/67b11751137257bd37280243",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"academicManager",
+						"v1",
+						"course",
+						"67b11751137257bd37280243"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findCourse",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/academicManager/v1/course/findCourse/67b2811ca6986bb6b8483238",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"academicManager",
+						"v1",
+						"course",
+						"findCourse",
+						"67b2811ca6986bb6b8483238"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllCourses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/academicManager/v1/course/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"academicManager",
+						"v1",
+						"course",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

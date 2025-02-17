@@ -1,0 +1,57 @@
+[{
+  "_id": {
+    "$oid": "67b28031a6986bb6b848322d"
+  },
+  "name": "ADMIN",
+  "email": "ADMIN@gmail.com",
+  "surname": "ADMIN",
+  "username": "ADMIN",
+  "password": "$2a$10$L.5XJgkkWCgYwqXLxePuhe5vtBmsLKHRKMsVYzD1aMsYkguIQPS52",
+  "phone": "11223344",
+  "courses": [
+    {
+      "$oid": "67b2811ca6986bb6b8483238"
+    },
+    {
+      "$oid": "67b28213a6986bb6b8483247"
+    }
+  ],
+  "role": "TEACHER_ROLE",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-02-17T00:17:53.957Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T00:31:22.266Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b2824da6986bb6b848324f"
+  },
+  "name": "Cristian",
+  "email": "cristiann@gmail.com",
+  "surname": "Lima",
+  "username": "LordCriss",
+  "password": "$2a$10$1CEXWhzz95pQ8TMC0.n1keueivU8l/bIjd5nIePZ/s55WA/ngNU4W",
+  "phone": "11223344",
+  "courses": [
+    {
+      "$oid": "67b28213a6986bb6b8483247"
+    },
+    {
+      "$oid": "67b282f3a6986bb6b8483262"
+    },
+    {
+      "$oid": "67b2811ca6986bb6b8483238"
+    }
+  ],
+  "role": "STUDENT_ROLE",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-02-17T00:26:53.812Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T00:33:41.420Z"
+  }
+}]
