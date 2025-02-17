@@ -6,6 +6,7 @@ import { dbConection } from "./mongo.js";
 import authRoutes from '../src/auth/auth.routes.js'
 import userRoutes from '../src/user/user.routes.js'
 import courseRoutes from '../src/course/course.routes.js'
+import limiter from "../src/middlewares/validate-cant-request.js"
 
 export const middlewares = (app) => {
   app.use(express.urlencoded({ extended: false }));
@@ -13,6 +14,7 @@ export const middlewares = (app) => {
   app.use(cors());
   app.use(morgan("dev"));
   app.use(helmet());
+  app.use(limiter);
 };
 
 const routes = (app) => {
