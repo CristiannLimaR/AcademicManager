@@ -50,10 +50,17 @@ export const getUsers = async (req = request, res = response) => {
   }
 };
 
-export const getUserById = async (req, res) => {
+export const getUserById = async (req = request, res) => {
   try {
     const { id } = req.params;
-    const user = await User.findById(id);
+    const user = await User.findById(id).populate({
+      path: "courses",
+      select: "name description teacher",
+      populate: {
+        path: "teacher",
+        select: "name surname",
+      },
+    });
 
     if (!user) {
       return res.status(400).json({
@@ -62,15 +69,26 @@ export const getUserById = async (req, res) => {
       });
     }
 
+    const usersWithCourses = {
+      ...user.toObject(),
+      courses: user.courses
+        ? user.courses.map((course) => ({
+            name: course.name,
+            description: course.description,
+            teacher: course.teacher ? course.teacher : "Teacher not found",
+          }))
+        : [],
+    };
+
     res.status(200).json({
       succes: true,
-      user,
+      usersWithCourses,
     });
   } catch (error) {
-    req.status(500).json({
+    res.status(500).json({
       success: false,
       msg: "error when searching for user",
-      error,
+      error: error.message,
     });
   }
 };
